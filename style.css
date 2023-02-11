@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: 0.75px;
+  height: 100vh;
+  background: linear-gradient(to bottom, #f44369, #c53a94);
+}
+
+.section-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 9.6rem 0;
+}
+
+.player.player-active {
+  background-color: #efefef98;
+  transition: all 1s ease-in-out;
+}
+
+.player-heading {
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: #242424;
+}
+.score {
+  display: inline-block;
+  font-size: 7.2rem;
+  color: #ec3383;
+}
+.game-modal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0 0 48px 0 rgba(0, 0, 0, 0.6);
+  width: 98rem;
+  position: relative;
+  border-radius: 11px;
+  overflow: hidden;
+}
+.player-score {
+  background-color: #ec3383;
+  border-radius: 11px;
+  padding: 2.4rem 4.8rem;
+}
+.player-details,
+.player-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+.current-heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.current-score {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.player0,
+.player1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12.8rem;
+  align-items: center;
+  padding: 8rem;
+}
+
+.player0,
+.player1 {
+  background-color: #fea4dc6e;
+}
+
+.game-play {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9.6rem;
+}
+
+.game-reset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6.2rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.img {
+  width: 35%;
+  box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.6);
+}
+.btn {
+  display: inline-block;
+  background: none;
+  font-size: 1.8rem;
+  color: #222;
+  text-transform: uppercase;
+  padding: 1.2rem 2.4rem;
+  border-radius: 32px;
+  background-color: #fff;
+  opacity: 70%;
+  border: none;
+  box-shadow: 0 0 48px 0 rgba(0, 0, 0, 0.6);
+  transition: all 0.4s;
+}
+.btn:active {
+  transform: translateY(5px);
+}
+.game-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+}
+.btn.hold {
+  padding: 1.2rem 1.8rem;
+}
+
+.player-winner {
+  background: #2f2f2f;
+}
